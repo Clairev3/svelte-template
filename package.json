@@ -1,0 +1,27 @@
+{
+  "name": "svelte-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:dev": "rollup -c -w",
+    "server:dev": "sirv dist --single --dev",
+    "dev": "run-p server:dev build:dev",
+    "start": "sirv dist --no-clear --port 6000"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.78.1",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^2.0.1",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.49.0"
+  },
+  "dependencies": {
+    "sirv-cli": "^2.0.0"
+  }
+}
